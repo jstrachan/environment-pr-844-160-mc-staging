@@ -1,2 +1,6 @@
-# default-environment-helmfile
-default git repository used as a base when creating remote environments using helmfile and helm 3.x
+# Environment git repository
+
+this git repository store:
+ 
+ * [installation requirememnts file](jx-requirements.yml) 
+ * [the list of apps to install in this environment](jx-apps.yml)

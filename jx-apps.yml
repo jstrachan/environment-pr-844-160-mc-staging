@@ -1,0 +1,6 @@
+defaultNamespace: jx
+apps:
+- name: stable/nginx-ingressnginx-ingress
+- name: jenkins-x/jxboot-helmfile-resources
+- name: jenkins-x/lighthouse
+- name: jenkins-x/tekton

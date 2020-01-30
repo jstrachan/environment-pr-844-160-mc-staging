@@ -1,3 +1,10 @@
+# avoid generated helmfiles
+apps/helmfile.yaml
+apps/generated
+
+system/helmfile.yaml
+system/generated
+
 # Binaries for programs and plugins
 *.exe
 *.exe~
@@ -13,3 +20,6 @@
 
 # Dependency directories (remove the comment below to include it)
 # vendor/
+
+.idea
+
