@@ -1,7 +1,7 @@
 # avoid generated helmfiles
+jx-requirements.values.yaml.gotmpl
 apps/helmfile.yaml
 apps/generated
-
 system/helmfile.yaml
 system/generated
 
