@@ -137,7 +137,7 @@ pipelineConfig:
             - --verbose
             - --warn-on-fail
             command: jx
-            dir: /workspace/source/repositories
+            dir: /workspace/source
             name: update-webhooks
           - args:
             - step
