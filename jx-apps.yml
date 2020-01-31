@@ -1,4 +1,3 @@
-defaultNamespace: jx
 apps:
 - name: stable/nginx-ingress
 - name: jenkins-x/jxboot-helmfile-resources
