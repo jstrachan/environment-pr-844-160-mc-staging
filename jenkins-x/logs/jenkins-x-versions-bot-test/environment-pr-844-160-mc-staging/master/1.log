@@ -1,54 +1,37 @@
 
-Showing logs for build [32mjenkins-x-versions-bot-test-env-kksqj-1[0m stage [32mrelease[0m and container [32mstep-credential-initializer-9kqmf[0m
-{"level":"warn","ts":1583406559.344503,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/0.8.0-**-support-backwards-incompats\" is not a valid GitHub commit ID"}
-{"level":"info","ts":1583406559.3448567,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
+Showing logs for build [32mmeta-jenkins-x-versions-bot-tes-7njtm-1[0m stage [32mmeta-pipeline[0m and container [32mstep-credential-initializer-hpbwk[0m
+{"level":"warn","ts":1583407048.2539759,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/0.8.0-jx-support-backwards-incompats\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1583407048.2544944,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
 
-Showing logs for build [32mjenkins-x-versions-bot-test-env-kksqj-1[0m stage [32mrelease[0m and container [32mstep-working-dir-initializer-7fb89[0m
-{"level":"warn","ts":1583406559.902421,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
-{"level":"info","ts":1583406559.9033716,"logger":"fallback-logger","caller":"bash/main.go:64","msg":"Successfully executed command \"sh -c mkdir -p /workspace/source\"; output "}
+Showing logs for build [32mmeta-jenkins-x-versions-bot-tes-7njtm-1[0m stage [32mmeta-pipeline[0m and container [32mstep-working-dir-initializer-5zqrn[0m
+{"level":"warn","ts":1583407048.8413763,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1583407048.8421624,"logger":"fallback-logger","caller":"bash/main.go:64","msg":"Successfully executed command \"sh -c mkdir -p /workspace/source\"; output "}
 
-Showing logs for build [32mjenkins-x-versions-bot-test-env-kksqj-1[0m stage [32mrelease[0m and container [32mstep-place-tools[0m
+Showing logs for build [32mmeta-jenkins-x-versions-bot-tes-7njtm-1[0m stage [32mmeta-pipeline[0m and container [32mstep-place-tools[0m
 
-Showing logs for build [32mjenkins-x-versions-bot-test-env-kksqj-1[0m stage [32mrelease[0m and container [32mstep-git-source-jenkins-x-versions-bot-test-env-kksqj-r4sjc[0m
-{"level":"warn","ts":1583406593.9872823,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/0.8.0-**-support-backwards-incompats\" is not a valid GitHub commit ID"}
-{"level":"info","ts":1583406595.0732193,"logger":"fallback-logger","caller":"git/git.go:103","msg":"Successfully cloned https://github.com/***************************/environment-pr-844-160-mc-staging.git @ v0.0.1 in path /workspace/source"}
+Showing logs for build [32mmeta-jenkins-x-versions-bot-tes-7njtm-1[0m stage [32mmeta-pipeline[0m and container [32mstep-git-source-meta-jenkins-x-versions-bot-tes-7njtm-psjqn[0m
+{"level":"warn","ts":1583407053.9806418,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/0.8.0-jx-support-backwards-incompats\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1583407055.124958,"logger":"fallback-logger","caller":"git/git.go:103","msg":"Successfully cloned https://github.com/***************************/environment-pr-844-160-mc-staging.git @ 110d47bbbf3b21367fe9516f24fb83f789379608 in path /workspace/source"}
 
-Showing logs for build [32mjenkins-x-versions-bot-test-env-kksqj-1[0m stage [32mrelease[0m and container [32mstep-git-merge[0m
-Using SHAs from PULL_REFS=master:b833b3e84f9f4aaf96d37ad69f64eeefbe4ceeab
+Showing logs for build [32mmeta-jenkins-x-versions-bot-tes-7njtm-1[0m stage [32mmeta-pipeline[0m and container [32mstep-git-merge[0m
+Using SHAs from PULL_REFS=master:110d47bbbf3b21367fe9516f24fb83f789379608
 WARNING: no SHAs to merge, falling back to initial cloned commit
 
-Showing logs for build [32mjenkins-x-versions-bot-test-env-kksqj-1[0m stage [32mrelease[0m and container [32mstep-validate-git[0m
-Git configured for user: jenkins-x-bot and email jenkins-x@googlegroups.com
+Showing logs for build [32mmeta-jenkins-x-versions-bot-tes-7njtm-1[0m stage [32mmeta-pipeline[0m and container [32mstep-merge-pull-refs[0m
+SKIP merge-pull-refs: Nothing to merge
 
-Showing logs for build [32mjenkins-x-versions-bot-test-env-kksqj-1[0m stage [32mrelease[0m and container [32mstep-verify-preinstall[0m
-no need to reconnect to cluster
-WARNING: TLS is not enabled so your webhooks will be called using HTTP. This means your webhook secret will be sent to your cluster in the clear. See https://jenkins-x.io/docs/getting-started/setup/boot/#ingress for more information
-Verifying the kubernetes cluster before we try to boot Jenkins X in namespace: **-staging
-Trying to lazily create any missing resources to get the current cluster ready to boot Jenkins X
-Attempting to lazily create the deploy namespace **-staging
-Namespace **-staging created 
-Verifying Ingress...
+Showing logs for build [32mmeta-jenkins-x-versions-bot-tes-7njtm-1[0m stage [32mmeta-pipeline[0m and container [32mstep-create-effective-pipeline[0m
+Effective pipeline written to jenkins-x-effective.yml
 
-WARNING: there is no context defined in your Kubernetes configuration - we may be inside a test case or pod?
-No kube context - probably in a unit test or pod?
-
-Verifying Storage...
-WARNING: Your requirements have not enabled cloud storage for logs - we recommend enabling this for kubernetes provider gke
-WARNING: Your requirements have not enabled cloud storage for reports - we recommend enabling this for kubernetes provider gke
-WARNING: Your requirements have not enabled cloud storage for repository - we recommend enabling this for kubernetes provider gke
-WARNING: Your requirements have not enabled cloud storage for backup - we recommend enabling this for kubernetes provider gke
-Storage configuration looks good
-
-Validating Kaniko secret in namespace **-staging
-attempting to lazily create the deploy namespace **-staging
-Configuring Kaniko service account pr-844-160-mc-staging-ko for project jenkins-x-bdd3
-Unable to find service account pr-844-160-mc-staging-ko, checking if we have enough permission to create
-error: failed to lazily create the kaniko secret in: **-staging: creating the service account: failed to run 'gcloud iam list-testable-permissions //cloudresourcemanager.googleapis.com/projects/jenkins-x-bdd3 --filter resourcemanager.projects.setIamPolicy' command in directory '', output: 'ERROR: gcloud crashed (MetadataServerException): HTTP Error 400: Bad Request
-
-If you would like to report this issue, please run the following command:
-  gcloud feedback
-
-To check gcloud for common problems, please run the following command:
-  gcloud info --run-diagnostics'
+Showing logs for build [32mmeta-jenkins-x-versions-bot-tes-7njtm-1[0m stage [32mmeta-pipeline[0m and container [32mstep-create-tekton-crds[0m
+running command: jx step next-version --use-git-tag-only --tag
+created new version: 0.0.3 and written to file: ./VERSION
+error: Have you set up a git credential helper? See https://help.github.com/articles/caching-your-github-password-in-git/
+: git output: To https://github.com/***************************/environment-pr-844-160-mc-staging.git
+ ! [remote rejected] v0.0.3 -> v0.0.3 (cannot lock ref 'refs/tags/v0.0.3': reference already exists)
+error: failed to push some refs to 'https://github.com/***************************/environment-pr-844-160-mc-staging.git': failed to run 'git push origin v0.0.3' command in directory '', output: 'To https://github.com/***************************/environment-pr-844-160-mc-staging.git
+ ! [remote rejected] v0.0.3 -> v0.0.3 (cannot lock ref 'refs/tags/v0.0.3': reference already exists)
+error: failed to push some refs to 'https://github.com/***************************/environment-pr-844-160-mc-staging.git''
+error: failed to set the version on release pipelines: failed to run '/bin/sh -c jx step next-version --use-git-tag-only --tag' command in directory '/workspace/source', output: ''
 [31m
-Pipeline failed on stage 'release' : container 'step-verify-preinstall'. The execution of the pipeline has stopped.[0m
+Pipeline failed on stage 'meta-pipeline' : container 'step-create-tekton-crds'. The execution of the pipeline has stopped.[0m
