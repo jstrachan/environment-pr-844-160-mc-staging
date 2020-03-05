@@ -3,3 +3,8 @@ apps:
 - name: jenkins-x/jxboot-helmfile-resources
 - name: jenkins-x/lighthouse
 - name: jenkins-x/tekton
+- name: dev/bdd-gh-1583406751
+  version: 0.0.1
+repositories:
+- name: dev
+  url: http://chartmuseum-jx.34.77.117.5.nip.io
