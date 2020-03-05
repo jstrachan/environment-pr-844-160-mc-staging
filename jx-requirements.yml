@@ -1,1 +1,62 @@
+autoUpdate:
+  enabled: false
+  schedule: ""
+bootConfigURL: https://github.com/jenkins-x-versions-bot-test/environment-pr-844-160-mc-staging.git
+cluster:
+  environmentGitOwner: jenkins-x-versions-bot-test
+  environmentGitPublic: true
+  gitKind: github
+  gitName: github
+  gitServer: https://github.com
+  namespace: jx-staging
+  provider: gke
+environments:
+- gitKind: github
+  gitServer: https://github.com
+  ingress:
+    domain: ""
+    externalDNS: false
+    namespaceSubDomain: ""
+    tls:
+      email: ""
+      enabled: false
+      production: false
+  key: dev
+  owner: jenkins-x-versions-bot-test
+  promotionStrategy: Auto
+  remoteCluster: true
+  repository: environment-pr-844-160-mc-staging
+gitops: true
 helmfile: true
+ingress:
+  domain: ""
+  externalDNS: false
+  namespaceSubDomain: -jx.
+  tls:
+    email: ""
+    enabled: false
+    production: false
+kaniko: true
+repository: nexus
+secretStorage: local
+storage:
+  backup:
+    enabled: false
+    url: ""
+  logs:
+    enabled: false
+    url: ""
+  reports:
+    enabled: false
+    url: ""
+  repository:
+    enabled: false
+    url: ""
+vault: {}
+velero:
+  schedule: ""
+  ttl: ""
+versionStream:
+  ref: 4a70b6646dfd613a8c9ecb5ea0f24394edfe4703
+  url: https://github.com/jenkins-x/jenkins-x-versions.git
+webhook: lighthouse
