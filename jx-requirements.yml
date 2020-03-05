@@ -18,9 +18,9 @@ environments:
 - gitKind: github
   gitServer: https://github.com
   ingress:
-    domain: ""
+    domain: 104.155.47.16.nip.io
     externalDNS: false
-    namespaceSubDomain: ""
+    namespaceSubDomain: -jx.
     tls:
       email: ""
       enabled: false
@@ -33,7 +33,7 @@ environments:
 gitops: true
 helmfile: true
 ingress:
-  domain: ""
+  domain: 104.155.47.16.nip.io
   externalDNS: false
   namespaceSubDomain: -jx.
   tls:
