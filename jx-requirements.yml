@@ -3,13 +3,17 @@ autoUpdate:
   schedule: ""
 bootConfigURL: https://github.com/jenkins-x-versions-bot-test/environment-pr-844-160-mc-staging.git
 cluster:
+  clusterName: pr-844-160-mc-staging
   environmentGitOwner: jenkins-x-versions-bot-test
   environmentGitPublic: true
   gitKind: github
   gitName: github
   gitServer: https://github.com
   namespace: jx-staging
+  project: jenkins-x-bdd3
   provider: gke
+  registry: gcr.io
+  zone: europe-west1-c
 environments:
 - gitKind: github
   gitServer: https://github.com
